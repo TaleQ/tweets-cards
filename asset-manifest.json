@@ -1,27 +1,26 @@
 {
   "files": {
     "main.css": "/tweets-cards/static/css/main.acfedfa7.css",
-    "main.js": "/tweets-cards/static/js/main.2d23aa89.js",
+    "main.js": "/tweets-cards/static/js/main.f63daba7.js",
     "static/css/876.42e4ef97.chunk.css": "/tweets-cards/static/css/876.42e4ef97.chunk.css",
     "static/js/876.9d3a93b2.chunk.js": "/tweets-cards/static/js/876.9d3a93b2.chunk.js",
-    "static/css/806.924ccdd5.chunk.css": "/tweets-cards/static/css/806.924ccdd5.chunk.css",
+    "static/css/806.aec86292.chunk.css": "/tweets-cards/static/css/806.aec86292.chunk.css",
     "static/js/806.f4c5cf71.chunk.js": "/tweets-cards/static/js/806.f4c5cf71.chunk.js",
     "static/js/786.f48b2c1e.chunk.js": "/tweets-cards/static/js/786.f48b2c1e.chunk.js",
     "static/media/bg_video.mp4": "/tweets-cards/static/media/bg_video.64c0d61bae3714b09523.mp4",
     "static/media/not_foung_img.jpeg": "/tweets-cards/static/media/not_foung_img.c156b7bef99b9a19e08d.jpeg",
     "static/media/bg_img_2x.png": "/tweets-cards/static/media/bg_img_2x.23e2c6cdeae5bcd92dd8.png",
-    "static/media/ellipse_img_2x.png": "/tweets-cards/static/media/ellipse_img_2x.6f3ae9371a5c2a239618.png",
     "index.html": "/tweets-cards/index.html",
     "main.acfedfa7.css.map": "/tweets-cards/static/css/main.acfedfa7.css.map",
-    "main.2d23aa89.js.map": "/tweets-cards/static/js/main.2d23aa89.js.map",
+    "main.f63daba7.js.map": "/tweets-cards/static/js/main.f63daba7.js.map",
     "876.42e4ef97.chunk.css.map": "/tweets-cards/static/css/876.42e4ef97.chunk.css.map",
     "876.9d3a93b2.chunk.js.map": "/tweets-cards/static/js/876.9d3a93b2.chunk.js.map",
-    "806.924ccdd5.chunk.css.map": "/tweets-cards/static/css/806.924ccdd5.chunk.css.map",
+    "806.aec86292.chunk.css.map": "/tweets-cards/static/css/806.aec86292.chunk.css.map",
     "806.f4c5cf71.chunk.js.map": "/tweets-cards/static/js/806.f4c5cf71.chunk.js.map",
     "786.f48b2c1e.chunk.js.map": "/tweets-cards/static/js/786.f48b2c1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acfedfa7.css",
-    "static/js/main.2d23aa89.js"
+    "static/js/main.f63daba7.js"
   ]
 }
