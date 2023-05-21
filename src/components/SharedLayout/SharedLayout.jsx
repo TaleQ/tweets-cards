@@ -1,9 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import css from "./SharedLayout.module.css";
-// import { useUsers } from "../../hooks/useUsers";
+import { useUsers } from "../../hooks/useUsers";
+import { Loader } from "../Loader/Loader";
 
 export const SharedLayout = () => {
-  // const { isLoading } = useUsers();
+  const { isLoading } = useUsers();
   return (
     <>
       <header className={css.header}>
@@ -20,7 +21,7 @@ export const SharedLayout = () => {
       </header>
       <main>
         <div className={css.container}>
-          {/* {(isLoading) && <Loader />} */}
+          {isLoading && <Loader />}
           <Outlet />
         </div>
       </main>

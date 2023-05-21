@@ -7,6 +7,7 @@ import { UserCard } from "../../components/UserCard/UserCard";
 import { LoadMoreBtn } from "../../components/LoadMoreBtn/LoadMoreBtn";
 import { useUsers } from "../../hooks/useUsers";
 import { useFilter } from "../../hooks/useFilter";
+import { Error } from "../../components/Error/Error";
 
 const Tweets = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const Tweets = () => {
   }, [filterValue]);
 
   return error ? (
-    <div>Error</div>
+    <Error />
   ) : (
     <>
       <Filter />

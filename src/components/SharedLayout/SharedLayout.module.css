@@ -1,7 +1,15 @@
 .header {
   display: sticky;
   padding: 25px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #8915dc;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 28, 219, 1) 6%,
+    rgba(90, 235, 44, 1) 39%,
+    rgba(227, 19, 215, 1) 67%,
+    rgba(241, 235, 40, 1) 88%
+  );
+  color: #fff;
 }
 
 .navList {
