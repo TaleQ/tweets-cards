@@ -1,10 +1,10 @@
 # Website "Tweets Cards"
 
-The website with interactive tweets cards
-with layout fixed in pixels and semantic HTML.
+The website with interactive tweets cards with layout fixed in pixels and semantic HTML.
+
 Created using React.js.
 
-:white_check_mark: Developed as test technical task for GoIT School.
+:white_check_mark: Developed as a test technical task for GoIT School.
 
 ## Used Libraries
 
@@ -16,7 +16,7 @@ Created using React.js.
 
 ## Backend
 
-[MockAPI](https://mockapi.io/)
+- [MockAPI](https://mockapi.io/)
 
 ## Styles
 
