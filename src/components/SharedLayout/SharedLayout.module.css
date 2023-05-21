@@ -1,22 +1,22 @@
 .header {
-  display: sticky;
-  padding: 25px;
-  border-bottom: 1px solid #8915dc;
-  background: linear-gradient(
-    135deg,
-    rgb(81 45 166) 6%,
-    rgba(90, 235, 44, 1) 39%,
-    rgba(227, 19, 215, 1) 67%,
-    rgba(241, 235, 40, 1) 88%
-  );
-  color: #fff;
+  padding: 30px 0 15px 0;
+  color: rgb(74, 41, 153);
 }
 
-.navList {
+.navBtn {
   margin: 0 auto;
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
+  padding: 14px 10px;
+  width: 180px;
+  height: 50px;
+  background-color: #4d2c9a;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-style: outset;
+}
+.navBtn:hover {
+  box-shadow: 8px 8px 24px -7px rgb(65, 2, 83);
 }
 
 .container {
