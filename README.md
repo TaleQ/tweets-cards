@@ -1,11 +1,18 @@
 # Website "Tweets Cards"
 
-The website with interactive tweets cards created using React.js
+The website with interactive tweets cards
 with layout fixed in pixels and semantic HTML.
+Created using React.js.
+
+:white_check_mark: Developed as test technical task for GoIT School.
 
 ## Used Libraries
 
-Redux Toolkit, Redux Persist, React Router DOM, Axios
+- Redux Toolkit
+- Redux Persist
+- React Router DOM
+- Axios
+- Prop Types
 
 ## Backend
 
@@ -13,4 +20,5 @@ Redux Toolkit, Redux Persist, React Router DOM, Axios
 
 ## Styles
 
-CSS-modules, Material UI
+- CSS-modules
+- Material UI
