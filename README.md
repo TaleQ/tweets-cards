@@ -5,10 +5,7 @@ with layout fixed in pixels and semantic HTML.
 
 ## Used Libraries
 
-Redux Toolkit
-Redux Persist
-React Router DOM
-Axios
+Redux Toolkit, Redux Persist, React Router DOM, Axios
 
 ## Backend
 
