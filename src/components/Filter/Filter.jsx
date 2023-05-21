@@ -26,7 +26,7 @@ export const Filter = () => {
         >
           <MenuItem value={"All"}>Show all</MenuItem>
           <MenuItem value={"Follow"}>Follow</MenuItem>
-          <MenuItem value={"Following"}>Following</MenuItem>
+          <MenuItem value={"Followings"}>Followings</MenuItem>
         </Select>
       </FormControl>
     </>

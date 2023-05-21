@@ -33,3 +33,9 @@ h2,
 h3 {
   margin: 0;
 }
+.MuiPagination-root {
+  margin-bottom: 20px;
+}
+.MuiPagination-ul {
+  justify-content: center;
+}

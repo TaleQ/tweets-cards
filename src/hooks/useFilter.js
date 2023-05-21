@@ -9,7 +9,7 @@ export const useFilter = () => {
         return allUsers;
       case "Follow":
         return unfollowedUsers;
-      case "Following":
+      case "Followings":
         return followedUsers;
       default:
         return allUsers;

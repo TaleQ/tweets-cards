@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
 import {
   selectAllUsers,
+  selectCount,
   selectError,
   selectFilter,
   selectFollowedUsers,
   selectIsLoading,
+  selectPage,
   selectTotalNumber,
   selectUnfollowedUsers,
 } from "../redux/selectors";
@@ -12,7 +14,10 @@ import {
 export const useUsers = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
+
   const totalNumber = useSelector(selectTotalNumber);
+  const page = useSelector(selectPage);
+  const count = useSelector(selectCount);
 
   const allUsers = useSelector(selectAllUsers);
   const followedUsers = useSelector(selectFollowedUsers);
@@ -24,6 +29,8 @@ export const useUsers = () => {
     isLoading,
     error,
     totalNumber,
+    page,
+    count,
     allUsers,
     followedUsers,
     unfollowedUsers,

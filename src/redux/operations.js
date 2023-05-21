@@ -17,6 +17,20 @@ export const fetchUsers = createAsyncThunk(
 
 export const loadMoreUsers = createAsyncThunk(
   "users/loadMoreUsers",
+  async (_, thunkAPI) => {
+    const state = thunkAPI.getState();
+    const page = state.users.page + 1;
+    try {
+      const { data } = await axios.get(`/users/?limit=6&page=${page}`);
+      return data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  }
+);
+
+export const showPage = createAsyncThunk(
+  "users/showPage",
   async (page, thunkAPI) => {
     try {
       const { data } = await axios.get(`/users/?limit=6&page=${page}`);

@@ -4,11 +4,13 @@ import {
   addFollower,
   removeFollower,
   loadMoreUsers,
+  showPage,
 } from "./operations";
 
 const usersInitialState = {
   items: [],
   totalNumber: null,
+  page: 1,
   error: null,
   isLoading: false,
   followedUsers: [],
@@ -26,6 +28,13 @@ const handleRejected = (state, action) => {
 const usersSlice = createSlice({
   name: "users",
   initialState: usersInitialState,
+  reducers: {
+    changePage: {
+      reducer(state, action) {
+        state.page = action.payload;
+      },
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchUsers.pending, (state) => handlePending(state))
@@ -46,6 +55,16 @@ const usersSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         state.items = [...state.items, ...action.payload];
+        state.page = state.page + 1;
+      })
+      .addCase(showPage.pending, (state) => handlePending(state))
+      .addCase(showPage.rejected, (state, action) =>
+        handleRejected(state, action)
+      )
+      .addCase(showPage.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.error = null;
+        state.items = action.payload;
       })
       .addCase(addFollower.pending, (state) => handlePending(state))
       .addCase(addFollower.rejected, (state, action) =>
@@ -79,4 +98,5 @@ const usersSlice = createSlice({
   },
 });
 
+export const { changePage } = usersSlice.actions;
 export const usersReducer = usersSlice.reducer;
