@@ -9,9 +9,20 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { usersReducer } from "./usersSlice";
+import { filterReducer } from "./filterSlice";
+
+const persistConfig = {
+  key: "followed",
+  storage,
+  whitelist: ["followedUsers"],
+};
+
+const persistedUserReducer = persistReducer(persistConfig, usersReducer);
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { users: persistedUserReducer, filter: filterReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

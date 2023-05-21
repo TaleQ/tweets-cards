@@ -1,0 +1,19 @@
+.list {
+  margin: 0 auto 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .list {
+    column-gap: 20px;
+  }
+}
+
+.noUsersText {
+  margin: 20px auto 40px;
+}

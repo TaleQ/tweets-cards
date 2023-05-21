@@ -14,7 +14,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter basename="/tweets-cards">
       <Provider store={store}>
-        <PersistGate loading={<div>Is loading...</div>} persistor={persistor}>
+        <PersistGate
+          loading={<div>Page is loading...</div>}
+          persistor={persistor}
+        >
           <App />
         </PersistGate>
       </Provider>

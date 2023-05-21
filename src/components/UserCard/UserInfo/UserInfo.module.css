@@ -1,0 +1,16 @@
+.text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ebd8ff;
+}
+.text:last-child {
+  margin-bottom: 26px;
+}
+
+.number {
+  margin-right: 5px;
+}

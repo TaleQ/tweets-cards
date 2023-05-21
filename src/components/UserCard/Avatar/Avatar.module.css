@@ -1,0 +1,49 @@
+.avatarLayout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #ebd8ff;
+  background-image: url("../../../img/ellipse_img_1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
+  border-radius: 50%;
+  z-index: 100;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .avatarLayout {
+    background-image: url("../../../img/ellipse_img_2x.png");
+  }
+}
+
+.avatarWrap {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatarAlt {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  background-color: rgba(207, 64, 226, 0.4);
+  border-radius: 4px;
+  color: #fbf8ff;
+  font-size: 18px;
+  z-index: 200;
+}

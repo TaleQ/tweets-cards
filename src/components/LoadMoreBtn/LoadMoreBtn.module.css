@@ -1,0 +1,16 @@
+.loadMoreBtn {
+  margin: 0 auto 20px;
+  padding: 14px 10px;
+  width: 180px;
+  height: 50px;
+  background-color: #4d2c9a;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.loadMoreBtn:hover {
+  box-shadow: 8px 8px 24px -7px rgb(65, 2, 83);
+}
